@@ -1,5 +1,5 @@
 APP = HelloWorld
-SRC = HelloWorld.swift
+SRC = main.swift
 
 all: $(APP)
 
