@@ -1,15 +1,11 @@
-APP = HelloWorld
-SRC = HelloWorld.swift
+run:
+	swift run
 
-all: $(APP)
+build:
+	swift build
 
-$(APP): $(SRC)
-	swiftc -o $(APP) $(SRC)
-
-run: $(APP)
-	./$(APP)
+xcode:
+	open Package.swift
 
 clean:
-	rm -f $(APP)
-
-.PHONY: run clean
+	$(RM) -rf .build
